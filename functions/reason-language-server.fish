@@ -1,2 +1,4 @@
 #!/usr/bin/env fish
-bass source reason-language-server
+set script_dir (realpath (dirname (status --current-filename)))
+
+bass source $script_dir/reason-language-server
